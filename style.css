@@ -17,6 +17,19 @@ body {
     text-align: center;
     margin: 0;
     font-family: var(--font-family);
+
+    animation: gradientAnimation 8s infinite alternate;
+    background: linear-gradient(135deg, #4e3e92, #0099ff, #830094);
+    background-size: 600% 600%;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
 }
 
 h1 {
